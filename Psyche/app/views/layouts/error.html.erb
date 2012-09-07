@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+
+    <%= meta("Joseph Chow", "Web designer, web developer, graphic designer, photographer") %>
+   <%= meta("description", "Joseph Chow, a Jack-of-all trades designer") %>
+
+    <title>Lightplay Interactive </title>
+
+      <!-- css-->
+      <%= css("error") %>
+  
+   <%= analytics %>
+
+
+	</head>
+	<body>
+
+	<div id="topbar"></div>
+        <div id="main">
+
+
+          <section id="page-content">
+            <%= render_common("header") %>
+            <%= clear %>
+
+
+          
+            <%= yield %>
+           
+          </section><!--end page content-->
+            <%= render_common("footer") %>
+         </div><!--end main-->
+
+   	</body>
+
+
+        <!--javascript-->
+        <%= javascript_include_tag :defaults %>
+       <%= javascript_include_tag "jquery.nivo.slider.js" %>
+       <%= javascript_include_tag "jgrowl.js" %>
+       <%= javascript_include_tag "easing.js" %>
+
+          <%= javascript_include_tag "twit.js" %>
+           <% javascript_include_tag "home.js" %>
+          <%= checkMessageSent %>
+        <script>
+
+          </script>
+</html>

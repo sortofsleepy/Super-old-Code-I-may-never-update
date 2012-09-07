@@ -1,0 +1,94 @@
+{% load common %}
+{% load projects %}
+{% load ui %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ site_name }}</title>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- css -->
+{{ "work"|css }}
+
+
+<!-- js -->
+{% base_js %}
+{{ "scrollTo"|js }}
+{{ "work"|js }}
+
+
+</head>
+<body>
+
+<section id="contact">
+	<form action="/sendmail/" method="post" class="contact-element">
+		<div class="mail-section">
+		<h3>Name</h3>
+		<input type="text" name="name" id="name-box" placeholder="Enter a nice name"/>
+		</div>
+	
+		
+		<div class="mail-section">
+		<h3>Email</h3>
+		<input type="text" name="email" id="email-box" placeholder="So I know how to contact you"/>
+		</div>
+	
+		
+		<div class="mail-section">
+		<h3>Message</h3>
+		<textarea name="message" id="email-message" placeholder="Enter a very nice message here"></textarea>
+		</div>
+		
+		<input type="submit" id="contact-submit"/>
+	</form>
+		
+	<section id="contact-copy" class="contact-element"> 
+		<p style="color:#eee;">By all means, please feel free to contact me with questions, comments, rants, etc</p>
+	</section>
+	
+</section><!--end contact-->
+<div id="top"></div>
+<div id="main">
+
+{% include 'common/header.html' %}
+
+<section id="page-content">
+
+
+
+
+<div id="category-box">
+	
+	<h1>Categories</h1>
+	<ul>
+		<li><a href="#" onclick="reset();">Reset</a></li>
+		<li><a href="#!/web" onclick="web();">Web</a></li>
+		<li><a href="#!/photo" onclick="photo">Photo</a></li>
+	
+	</ul>
+</div><!--end category box-->
+
+
+
+
+
+
+
+</section><!--end page content-->
+
+{% include 'common/footer.html' %}
+
+
+
+</div>
+
+
+
+
+
+</body>
+
+</html>

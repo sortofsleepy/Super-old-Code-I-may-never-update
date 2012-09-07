@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>TheUserAgent</title>
+
+
+    <!--css-->
+  	<%= css('home')%>
+	<%= css('prettify')%>
+	<%= stylesheet_link_tag "nivo.css" %>
+	<link rel="stylesheet" type="text/css" href="/javascripts/fancybox/fancybox.css"/>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-21617606-3']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	</head>
+	<body onload="init();">
+	
+	<%= render_common('header')%>
+	
+	<div id="background"></div>
+	
+          <div id="main">
+	
+	<section id="home">
+			<div style="border:solid;border-width:1px;border-color:#dfdfdf"></div>
+			<br/>
+			<br/>
+		<h1 class="intro">Hello! This is the portfolio of Joseph Chow</h1>
+	
+		<br/>
+		<br/>
+		<div style="border:solid;border-width:1px;border-color:#dfdfdf"></div>
+     
+		<div id="featured-work">
+				<div id="slider">
+					<%= image_tag "http://www.theuseragent.com/introslides/intro1.png", :title=>"#htmlcaption" %>
+								<%= image_tag "http://www.theuseragent.com/introslides/intro2.png", :title=>"#htmlcaption2" %>
+								<%= image_tag "http://www.theuseragent.com/introslides/intro3.png",:title=>"#htmlcaption3" %>
+				</div><!--end slider-->
+
+				<br/>
+				<br/>
+				
+				<!--html captions-->
+		
+				<div id="htmlcaption" class="nivo-html-caption">
+				    <h1 class="caption-title">WebGL Squares</h1>
+					<p style="font-family:Museo;">This is the start of a experiment using 
+						three.js and webgl</p>
+						<a href="http://www.theuseragent.com/visual/">See it here</a>
+				</div>
+				
+					<div id="htmlcaption2" class="nivo-html-caption">
+					   <h1 class="caption-title">Maya City</h1>
+					   <p style="font-family:Museo;">This was a model I made in Maya to re-imagine
+						a photo by Paul Strand</p>
+					</div>
+					
+						<div id="htmlcaption3" class="nivo-html-caption">
+						    <h1 class="caption-title">Sublime</h1>
+							  <p style="font-family:Museo;">I designed a couple of shirts
+								during a internship.
+								</p>
+						</div>
+			
+		</div><!--end featured work-->
+		<canvas width="1000" height="280" style="position:relative;top:20px;" id="canvas"></canvas>
+		</section><!--end home-->
+		
+		
+		<section id="about">
+				<div style="border:solid;border-width:1px;border-color:#dfdfdf"></div>
+					<br/>
+					<br/>
+				<h1 class="intro">About</h1>
+
+				<br/>
+				<br/>
+				<div style="border:solid;border-width:1px;border-color:#dfdfdf"></div>
+	<div id="about-content">
+		<h1 class="about-intro">I'm a 24 year old New Media Designer that is knowledgeable in a wide variety of 
+			areas</h1>
+			<br/>
+			<br/>
+			<div style="border:solid;border-width:1px;border-color:#dfdfdf"></div>
+			<section id="skills">
+			
+				
+				<section id="group1">
+					
+				
+					<section class="skills-section">
+						<h2>Software</h2>
+						<ul>
+							<li>Photoshop</li>
+							<li>Flash</li>
+							<li>Illustrator</li>
+							<li>InDesign</li>
+							<li>Maya</li>
+							<li>Logic</li>
+							<li>Premiere</li>
+						
+						</ul>
+					</section>
+					
+						<section class="skills-section">
+							<h2>Programming</h2>
+							<ul>
+								<li>Actionscript</li>
+								<li>PHP</li>
+								<li>HTML/CSS</li>
+								<li>C++</li>
+								<li>Objective-C</li>
+								<li>Python</li>
+								<li>Ruby</li>
+
+							</ul>
+						</section>
+						
+						
+							<section class="skills-section">
+								<h2>Frameworks</h2>
+								<ul>
+									<li>Wordpress</li>
+									<li>CodeIgniter</li>
+									<li>Rails</li>
+									<li>Django</li>
+									<li>Drupal</li>
+									<li>Silverstripe</li>
+
+								</ul>
+							</section>
+							
+							<section class="skills-section">
+								<h2>Misc</h2>
+								<ul>
+									<li>Photographer</li>
+									<li>Videographer</li>
+									<li>Sound design</li>
+									<li>Some Processing experience</li>
+									<li>Some Cinder Experience</li>
+
+								</ul>
+							</section>
+				</section><!--end group1-->
+				
+				
+				<section id="group2">
+					<section id="tweets">
+						<h2 style="padding-left:10px;">Recent Tweets</h2>
+					</section><!--end tweets-->
+					
+					
+					<section id="flickr">
+						<h2>Flickr Feed</h2>
+					</section><!--end flickr-->
+					
+					
+				</section><!--end group2-->
+						
+			</section><!--end skills-->
+			
+	</div>
+	
+		</section><!--end about-->
+		
+		
+		
+		
+		
+		<section id="contact">
+				<div style="border:solid;border-width:1px;border-color:#dfdfdf"></div>
+					<br/>
+					<br/>
+				<h1 class="intro">Contact</h1>
+
+				<br/>
+				<br/>
+				<div style="border:solid;border-width:1px;border-color:#dfdfdf"></div>
+		
+			<section id="contact-info">
+				<p>Thanks for visiting! For any requests, comments, ideas, questions
+					etc, please use the form on the left.</p>
+					
+					
+				
+				
+			</section><!--end contact info-->
+			<form action="/mail/index/" method="get" class="contact-element">	
+				<div class="form-section">
+					<h2>Name</h2>
+					<input type="text" name="name"/>
+				</div>
+				
+					<div class="form-section">
+						<h2>Email</h2>
+						<input type="text" name="email"/>
+					</div>
+					
+						<div class="form-section">
+							<h2>Website</h2>
+							<input type="text" name="website"/>
+						</div>
+						
+						
+							<div class="form-section">
+								<h2>Comment</h2>
+								<textarea name="comment"></textarea>
+							</div>
+							
+							<input type="submit"/>
+			</form>
+		</section>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<style>
+		#slider2{
+			width:100px;
+			
+		}
+		.nivoSlider{
+			height:400px;
+			width:100px;
+			border:solid 1px #dfdfdf;
+			-moz-box-shadow:0px 0px 5px #333;
+			-webkit-box-shadow: 0px 0px 5px #333;
+		}
+		</style>
+		
+		<section id="work">
+				<div style="border:solid;border-width:1px;border-color:#dfdfdf"></div>
+					<br/>
+					<br/>
+				<h1 class="intro workTitle" id="workTitle">Work</h1>
+
+				<br/>
+				<br/>
+				<div style="border:solid;border-width:1px;border-color:#dfdfdf"></div>
+			
+				<div id="works-container"></div>
+				<div style="clear:both"></div>
+				<%= render_common('share') %>	
+		</section><!--end work-->
+	
+          </div><!--end main-->
+	</body>
+
+        <!--js-->
+        <%= javascript_include_tag :defaults %>
+        <%= javascript_include_tag "paper.js","easing.js","gallery.js","nivo.js","scrollTo.js","fancybox/fancybox.js","prettify.js","tweet.js" %>
+	
+		<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ride9650"></script>
+		<script type="text/javascript" src="/javascripts/three.js"></script>
+		<script type="text/javascript" src="/javascripts/cube.js"></script>
+		<script type="text/javascript" src="/javascripts/ballapp.js"></script>
+	  <script type="text/javascript">
+	
+
+		$(window).ready(function(){
+			
+		
+				
+		});
+	    $(document).ready(function(){
+			  $("#slider").nivoSlider({
+					prevText:'',
+					nextText:'',
+				});	
+				
+
+		
+				
+				var t = new Social("rice9650","4");
+			//	t.getTweet("#tweets");
+				t.flickr("#flickr");
+			
+	});
+	  </script>
+</html>

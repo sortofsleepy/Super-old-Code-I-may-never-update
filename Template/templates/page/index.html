@@ -1,0 +1,121 @@
+{% load common %}
+{% load projects %}
+{% load ui %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ site_name }}</title>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- css -->
+{{ "home"|css }}
+{{ "slider"|css }}
+
+<!-- js -->
+{% base_js %}
+{{ "scrollTo"|js }}
+{{ "anythingslider"|js }}
+
+
+{{"button"|ui}}
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function(){
+	//giving the submit button for the contact form a stylized look
+	$("input").button();	
+});
+</script>
+<section id="contact">
+	<form action="/sendmail/" method="post" class="contact-element">
+		<div class="mail-section">
+		<h3>Name</h3>
+		<input type="text" name="name" id="name-box" placeholder="Enter a nice name"/>
+		</div>
+	
+		
+		<div class="mail-section">
+		<h3>Email</h3>
+		<input type="text" name="email" id="email-box" placeholder="So I know how to contact you"/>
+		</div>
+	
+		
+		<div class="mail-section">
+		<h3>Message</h3>
+		<textarea name="message" id="email-message" placeholder="Enter a very nice message here"></textarea>
+		</div>
+		
+		<input type="submit" id="contact-submit"/>
+	</form>
+		
+	<section id="contact-copy" class="contact-element"> 
+		<p style="color:#eee;">By all means, please feel free to contact me with questions, comments, rants, etc</p>
+		
+		
+		<br/>
+	
+	</section>
+	
+</section><!--end contact-->
+<div id="top"></div>
+<div id="main">
+
+{% include 'common/header.html' %}
+
+<section id="page-content">
+
+	<section id="content-wrapper">
+		
+		
+
+		<section id="home">
+		
+		<section id="slider">
+		
+				<img src="/static/images/city-q-g-1024-480-6.jpeg"/>
+		
+		</section><!--end slider-->
+		
+		
+		<section id="recent-work">
+			<h1 class="section-title">Recent Work</h1>
+			
+		</section>
+		
+		
+		</section><!--end home-->
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		</section><!--end content wrapper-->
+	
+</section><!--end page content-->
+
+{% include 'common/footer.html' %}
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	//	$("#slider ul").anythingSlider();
+		
+	})
+</script>
+
+</div>
+
+
+
+
+
+</body>
+
+</html>

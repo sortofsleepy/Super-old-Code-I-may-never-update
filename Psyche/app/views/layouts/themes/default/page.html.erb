@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>About</title>
+    <!--css-->
+    <%= css('home') %>
+
+
+	</head>
+
+
+
+        <body>
+
+	<%= render_common("contact") %>
+<div id="main">
+	<%= render_common('header') %>
+
+	<section id="page-content">
+	<div id="intro-box">
+		<h1 id="intro">Hello! I'm a interactive designer. I am familiar with a wide variety of techniques and designs</h1>
+</div>
+			<div id="content-copy">
+		<section id="software">
+				<ul>
+					<li><h2 class="section-title">Software</h2></li>
+					<li><h3>Photoshop</h3></li>
+					<li><h3>Illustrator</h3></li>
+					<li><h3>Flash</h3></li>
+					<li><h3>Premiere</h3></li>
+					<li><h3>Logic Pro</h3></li>
+					<li><h3>Maya</h3></li>
+				</ul>
+		</section>
+		
+			<section id="programming">
+					<ul>
+						<li><h2 class="section-title">Programming</h2></li>
+						<li><h3>Actionscript</h3></li>
+						<li><h3>PHP</h3></li>
+						<li><h3>HTML/CSS</h3></li>
+						<li><h3>Javascript</h3></li>
+						<li><h3>Django</h3></li>
+						<li><h3>Rails</h3></li>
+						<li><h3>Processing</h3></li>
+					</ul>
+			</section>
+		</div>
+		
+			<section id="school">
+				<h2 style="letter-spacing:0px">I went to UCLA and studied in Design|Media Arts</h2>
+				<%= image_tag "broad.jpeg"%>
+			</section>
+
+
+
+
+</section><!--end page content-->
+
+
+
+
+
+          <%= render_common("footer") %>
+</div><!--end main-->
+	</body>
+         
+          <%= javascript_include_tag :defaults %>
+	
+ <%= javascript_include_tag "easing.js"%>
+ <%= javascript_include_tag "processing.js"%>
+</html>

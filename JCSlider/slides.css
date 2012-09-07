@@ -1,0 +1,39 @@
+
+.show img{
+	height:500px;
+	width:1100px;
+	z-index:1;
+
+
+}
+
+.show{
+	height:300px;
+	margin-top:200px;
+}
+
+.hide{
+	display: none;
+}
+
+.image{
+	height:400px;
+	z-index: -2000;
+}
+
+.text{
+	position:relative;
+	top:100px;
+	
+
+	z-index: 2;
+	background-color: aqua;
+	width:300px;
+	height:100px;
+	margin-bottom:-200px;
+	font-family: Helvetica,sans-serif;
+}
+
+.slides{
+	z-index: 1;
+}

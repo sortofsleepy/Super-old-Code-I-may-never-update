@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>TheUserAgent</title>
+
+
+    <!--css-->
+    <%= css("home") %>
+	<%= stylesheet_link_tag "nivo.css" %>
+
+	<style>
+	
+	</style>
+  
+	</head>
+	<body>
+	
+
+          <div id="main">
+         <%= render_common("header") %>
+     	
+
+            <section id="page-content">
+
+           		<div id="slider">
+					<%= image_tag "http://www.theuseragent.com/introslides/intro1.png", :title=>"#htmlcaption" %>
+								<%= image_tag "http://www.theuseragent.com/introslides/intro2.png", :title=>"#htmlcaption2" %>
+								<%= image_tag "http://www.theuseragent.com/introslides/intro3.png",:title=>"#htmlcaption3" %>
+				</div><!--end slider-->
+
+				<br/>
+				<br/>
+				
+				<!--html captions-->
+			
+				<div id="htmlcaption" class="nivo-html-caption">
+				    <h1>WebGL Squares</h1>
+					<p style="font-family:Museo;">This is the start of a experiment using 
+						three.js and webgl</p>
+				</div>
+				
+					<div id="htmlcaption2" class="nivo-html-caption">
+					   <h1>Maya City</h1>
+					   <p style="font-family:Museo;">This was a model I made in Maya to re-imagine
+						a photo by Paul Strand</p>
+					</div>
+					
+						<div id="htmlcaption3" class="nivo-html-caption">
+						    <h1>Sublime</h1>
+							  <p style="font-family:Museo;">I designed a couple of shirts
+								during a internship.
+								</p>
+						</div>
+				
+				
+				
+				
+				<section id="page-content-wrapper">
+				<h1 class="home-intro">Hi, my name is Joseph Chow, a interactive designer</h1>	
+			
+			
+			
+					<div id="rightCol" style="float:right">
+					
+					</div><!--end rightCol-->
+		
+			<div id="leftCol">		
+					<h1 class="section-title">Recent Happenings</h1>
+              		<ul id="item-list">
+              		</ul>
+
+			</div><!-- end leftCol-->
+			
+		
+
+			   
+			</section><!--end page content wrapper-->
+            </section>
+
+			<div style="clear:both;"></div>
+
+
+
+
+         <%= render_common("footer") %>
+
+          </div><!--end main-->
+	</body>
+
+        <!--js-->
+        <%= javascript_include_tag :defaults %>
+        <%= javascript_include_tag "home.js","twit.js","isotope.js","easing.js","nivo.js" %>
+
+	  <script type="text/javascript">
+	
+	    
+	  </script>
+</html>

@@ -1,0 +1,19 @@
+/*----------------------------
+
+	Category Box
+	
+------------------------------*/
+		<div id="category-box">
+
+<h1>Categories</h1>
+<ul>
+
+	<li><a href="#!web" class="web" onclick="category.web();">Web</a></li>
+	<li><a href="#!photo" class="photo" onclick="category.photo();">Photo</a></li>
+<li><a href="#!programming" class="programming" onclick="category.programming();">Programming</a></li>
+<li><a href="#!video" class="video" onclick="category.video();">Video</a></li>
+</ul>
+<br/>
+<br/>
+<a href="#" onclick="Work.removeFilter();">Reset</a>
+</div><!--end category box-->

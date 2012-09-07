@@ -1,0 +1,27 @@
+@import url('system.css');
+
+
+input[type="text"]{
+    height:30px;
+    width:500px;
+}
+
+.field{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#page-content{
+
+	border:solid;
+	border-width: 1px;
+	border-color: #ccc;
+
+	height:960px;
+	width:1024px;
+	position: relative;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	background-color: #fafafa;
+        padding: 10px;
+}

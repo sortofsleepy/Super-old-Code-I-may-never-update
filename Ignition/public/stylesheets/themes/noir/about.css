@@ -1,0 +1,157 @@
+.about-intro{
+	font-size:55px;
+	font-family:"Museo";
+	
+}
+
+#about-content{
+	margin-top:20px;
+	
+}
+
+#about h2{
+	border-bottom:solid 1px #dfdfdf;
+	margin-bottom:10px;
+	padding-bottom:5px;
+	width:150px;
+}
+
+#skills{
+
+	margin-top:20px;
+	margin-bottom:100px;
+
+	font-family:"Museo";
+	height:100%;
+	width:100%;
+
+}
+/*------------------
+
+	Skill sections
+	
+-------------------*/
+.skills-section{
+	padding:20px;
+	border-right:solid 1px #dfdfdf;
+	border-left:solid 1px #dfdfdf;
+	width:215px;
+	height:130px;
+
+}
+
+.skills-section:hover{
+
+}
+
+.skills-group{
+	margin-left:-30px;
+	
+}
+.skills-section ul{
+
+}
+
+/*----------------
+
+	Twitter related
+	
+-------------------*/
+
+.tweet-link,.twitter-user-link{
+	color:blue;
+	
+}
+#tweets{
+	border-left:solid 1px #dfdfdf;
+	border-right:solid 1px #dfdfdf;
+	width:320px;
+	padding-left:10px;
+	
+}
+
+
+/*--------------------
+
+	flickr related
+
+--------------------*/
+#flickr{
+	margin-left:20px;
+	
+}
+#flickr ul{
+	width:400px;
+}
+#flickr ul li{
+	float:left;
+	
+	-webkit-transition:opacity 0.5s ease-in;
+	-moz-transition:opacity 0.5s ease-in;
+	opacity:1;
+	
+}
+
+#flickr ul li:hover{
+	-webkit-transition:opacity 0.5s ease-in;
+	-moz-transition:opacity 0.5s ease-in;
+	opacity:0.5;
+	
+	
+}
+
+#flickr ul li:hover img{
+	position:relative;
+	
+	-webkit-transition:z-index 0.5s ease-in;
+	-moz-transition:z-index 0.5s ease-in;
+	z-index:-1;
+}
+.flickr-image{
+	height:100px;
+	width:100px;
+	
+	border:solid 2px #dfdfdf;
+}
+/*------------------
+
+	Columns
+	
+-------------------*/
+#group2{
+	display: -webkit-box;
+	  -webkit-box-orient: horizontal;
+	  -webkit-box-align: stretch;
+
+	  display: -moz-box;
+	  -moz-box-orient: horizontal;
+	  -moz-box-align: stretch;
+
+	  display: box;
+	  box-orient: horizontal;
+	  box-align: stretch;
+	margin-top:20px;
+	
+}
+
+#group1{
+	display: -webkit-box;
+	  -webkit-box-orient: horizontal;
+	  -webkit-box-align: stretch;
+
+	  display: -moz-box;
+	  -moz-box-orient: horizontal;
+	  -moz-box-align: stretch;
+
+	  display: box;
+	  box-orient: horizontal;
+	  box-align: stretch;
+
+	  width: 100%;
+	  height: 190px;
+	
+	border-bottom:solid 1px #dfdfdf;
+	
+
+	
+}

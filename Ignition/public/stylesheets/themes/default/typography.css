@@ -1,0 +1,71 @@
+
+
+@font-face{
+    font-family:"Museo";
+    src:url('fonts/Museo_Slab_500.otf');
+}
+
+
+@font-face{
+    font-family:"Ostrich";
+    src:url('fonts/ostrich-black.otf');
+}
+
+body{
+    font-family: sans-serif;
+    color:#444;
+
+}
+
+
+h1,h2,h3{
+    font-family: "Museo";
+}
+
+#site-title{
+    font-family:"Museo";
+    font-size:40px;
+    letter-spacing: -6px;
+}
+
+a{
+    text-decoration: none;
+    color:#333;
+	font-family:"Museo";
+}
+
+.section-title{
+    background-color:#fff;
+    width:200px;
+    padding:10px;
+    -webkit-box-shadow:0px 0px 10px #999;
+    -moz-box-shadow: 0px 0px 10px #999;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    margin-bottom:10px;
+    
+    border-left:solid;
+    border-right:solid;
+    border-bottom:solid;
+    
+    border-width:1px;
+    border-bottom-width:10px;
+    border-bottom-color:#333;
+    border-left-color:#c9c9c9;
+        border-right-color:#c9c9c9;
+        font-size:20px;
+}
+
+/*-------------
+    Header
+-----------------*/
+nav ul li a{
+    font-family: "Museo";
+}
+/*-------------
+    Single page text
+-----------------*/
+#single p{
+	font-family:"Museo";
+}
+

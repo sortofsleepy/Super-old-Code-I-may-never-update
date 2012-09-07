@@ -1,0 +1,199 @@
+@import url('../../main.css');
+@import url('about.css');
+.home-intro{
+	position:relative;
+	bottom:100px;
+}
+
+.home-content-intro
+		{
+	margin-top:2000px;
+	top:2000px;
+}
+
+
+#intro-copy h1{
+	font-size:80px;
+
+	
+}
+
+
+#recent-work{
+		   -webkit-box-shadow:0px 0px 10px #aaa;
+		   height:900px;
+	background: #fff;
+	padding-top:40px;
+	padding:10px;
+}
+
+#page-content{
+	margin-top: -40px;
+	width:1100px;
+}
+
+#page-content img{
+	
+}
+
+
+/*--------Home content General---------*/
+#home-content-wrapper{
+    padding:10px;
+    width:1024px;
+    height:100%;
+    background-color:#f9f9f9;
+ 	margin-left: auto;
+ 	margin-right:auto;
+   -webkit-box-shadow:0px 0px 3px #444;
+}
+
+#item-list li{
+	
+   float:left;
+      height:157px;
+      overflow:hidden;
+	 
+      border:solid;
+    border-width:5px;
+    border-color:#e1e1e1;
+ 
+    margin-left: 2px;
+    margin-top:2px;
+ 
+    -webkit-box-shadow:0px 0px 3px #444;
+}
+
+.link{
+	   width:243px;
+      height:157px;
+}
+
+.tumblr-post{
+	  width:243px;
+      height:157px;
+	
+}
+.tumblr-video{
+
+}
+/*----------flickr-------------*/
+.flickr-thumb{
+ 
+   
+}
+.flickr-thumb img{
+ 
+ 
+}
+/*----tumblr posts------*/
+.tumblr-thumb{
+
+   
+}
+.tumblr-post{
+     background:url('../../../images/textures/stripe.png');
+
+    
+    position: relative;
+   
+}
+.tumblr-post li h1{
+   
+}
+.tumblr-post li{
+      background:url('../../../images/textures/stripe.png');
+      height:157px;
+    
+
+    
+}
+.post-title{
+    position: relative;
+
+
+}
+
+
+/*
+ * Slider stuff
+ */
+
+.nivoSlider img{
+	width:1100px;
+}
+#slider-wrapper {
+    background:url(images/slider.png) no-repeat;
+    width:1100px;
+    height:392px;
+    margin:0 auto;
+    padding-top:74px;
+    margin-top:50px;
+    position:relative;
+    left:60px;
+}
+
+#slider{
+	position:relative;
+    width:1100px;
+    height:480px;
+  
+	background:url(images/loading.gif) no-repeat 50% 50%;
+}
+#slider img {
+	width:1100px;
+}
+#slider a {
+	border:0;
+	display:block;
+}
+
+.nivo-controlNav {
+	position:absolute;
+	left:260px;
+	bottom:-42px;
+}
+.nivo-controlNav a {
+	display:block;
+	width:22px;
+	height:22px;
+	background:url(images/bullets.png) no-repeat;
+	text-indent:-9999px;
+	border:0;
+	margin-right:3px;
+	float:left;
+}
+.nivo-controlNav a.active {
+	background-position:0 -22px;
+}
+
+.nivo-directionNav a {
+	height:100px;
+	width:70px;
+}
+a.nivo-nextNav {
+	height:100px;
+	width:70px;
+	background:url('../../../images/right-arrow.png');
+}
+a.nivo-prevNav {
+	height:100px;
+	width:70px;
+	background:url('../../../images/left-arrow.png');
+}
+
+.nivo-caption {
+    text-shadow:none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.nivo-caption a { 
+    color:#efe9d1;
+    text-decoration:underline;
+}
+
+/*====================*/
+/*=== Other Styles ===*/
+/*====================*/
+.clear {
+	clear:both;
+}

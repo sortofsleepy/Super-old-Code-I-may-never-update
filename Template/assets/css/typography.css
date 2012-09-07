@@ -1,0 +1,50 @@
+/*
+
+	CSS for handling type related issues
+*/
+
+@font-face{
+	font-family:"Museo";
+	src:url('../fonts/Museo_Slab_500.otf');
+}
+
+body{
+	font-family:sans-serif;
+}
+
+a{
+	text-decoration:none;
+	color:#333;
+	letter-spacing:-1px;
+}
+
+h1{
+	font-family:"Museo";
+	letter-spacing:-3px;
+	
+	
+}
+
+h2,h3{
+	font-family:"Museo";
+}
+
+p{
+	font-family:"Museo";
+}
+
+h1{
+	font-size:30px;
+}
+
+h2{
+	font-size:20px;
+}
+
+h3{
+	font-size:16px;
+}
+
+#site-name{
+	font-size:20px;
+}

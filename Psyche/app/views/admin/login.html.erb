@@ -1,0 +1,18 @@
+
+<%= form_tag({:controller=>"admin",:action=>"check"})  do |f| %>
+<%= label_tag(:username, "Username") %>
+<%= text_field_tag(:username) %>
+<br/>
+<%= label_tag(:password, "Password")  %>
+<%= password_field_tag(:password) %>
+<input type="hidden" name="refer" value="<%= params[:refer] %>"/>
+<br/>
+<%= submit_tag "Login" %>
+
+<% end %>
+
+
+<!-- Error notice if someone hasn't logged in-->
+<% if flash[:notice] %>
+<h1><%= flash[:notice] %></h1>
+<% end -%>

@@ -1,0 +1,261 @@
+@import url('main.css');
+
+
+#main{
+
+	display:none;
+}
+
+#page-content{
+	height:1000px;
+	
+}
+#page-content-wrapper{
+	position:relative;
+	bottom:50px;
+}
+
+
+#work-list li a:hover;{
+	padding:0px;
+	
+}
+/*----category box------*/
+#category-box{
+	height:400px;
+	width:215px;
+	-webkit-box-shadow:0px 5px 10px #555;
+	-moz-box-shadow:0px 5px 10px #555;
+	margin-top:60px;
+	padding:18px;
+	float:left;
+	border-top:solid;
+	border-width:8px;
+	border-color:#333;
+}
+
+#category-box h1{
+	font-size:30px;
+	border-bottom:solid;
+	border-bottom-width:1px;
+	border-bottom-color:#dadada;
+	margin-bottom:20px;
+}
+
+/*------------
+	
+	Work section
+	
+--------------*/
+
+#works{
+	
+	position:relative;
+	top:50px;
+	
+	
+}
+#slider2{
+	
+	height:304px;
+	width:540px;
+}
+
+#slider2 a:hover{
+	background:none;
+	
+}
+
+.nivo-controlNav{
+	
+	display:none;
+}
+#works ul{
+
+	margin-top:20px;
+	position:relative;
+	top:12px;
+	width:1200px;
+	margin-left:-13px;
+}
+
+#works ul li{
+	
+	float:left;
+	margin-left:15px;
+}
+
+#works ul li{
+    float: left;
+
+    padding:10px;
+
+    width:310px;
+    height:200px;
+    overflow:hidden;
+       -webkit-transition:background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+
+    -webkit-transition:-webkit-box-shadow 0.5s ease-in;
+    -webkit-box-shadow:0px 0px 0px #fff;
+    background:none;
+}
+#works ul li img{
+    border:solid;
+    border-width:1px;
+    border-color:#c1c1c1;
+    
+}
+
+
+
+#works ul li:hover{
+
+    -webkit-transition:-webkit-box-shadow 0.5s ease-in;
+    -webkit-box-shadow:0px 0px 10px #333;
+    -webkit-transition:background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    background:#f5f5f5;
+}
+
+#works ul li:hover .work-title{
+
+    -webkit-transition:opacity 0.5s ease-in;
+   
+    -moz-transition:opacity 0.5s ease-in;
+    
+    opacity:1;
+}
+
+.work-title{
+	opacity:0;
+}
+
+/*-------------------
+
+	Single View
+	
+--------------------*/
+#single{
+	display:none;
+   padding-bottom:100px;
+    width:1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background:#fff;
+
+	z-index:-1;
+    -webkit-box-shadow:0px 0px 10px #999;
+    -moz-box-shadow:0px 0px 10px #999;
+}
+
+#single-header{
+	
+	width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+
+    -webkit-box-shadow:0px 0px 10px #c1c1c1;
+    -moz-box-shadow:0px 0px 10px #c1c1c1;
+    box-shadow:0px 0px 10px #c1c1c1;
+}
+
+#single h1{
+	padding:8px;
+    padding-top:50px;
+    width:233px;
+    -webkit-box-shadow:0px 0px 8px #333;
+    -moz-box-shadow:0px 0px 8px #333;
+    -o-box-shadow:0px 0px 8px #333;
+	font-size:30px;
+	border-bottom:solid;
+	border-bottom-width:8px;
+	border-bottom-color:#333;
+	
+	margin-bottom:20px;
+}
+
+.work{
+	
+	padding:10px;
+	width:370px;
+	float:left;
+	border-right:solid;
+	border-right-width:1px;
+	border-right-color:#dfdfdf;
+	padding-bottom:100px;
+}
+.media{
+	position:relative;
+	left:20px;
+	width:400px;
+	margin-left:420px;
+}
+
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/* End: Recommended Isotope styles */
+.selected{
+	padding:5px;
+	background-color:#333;
+	color:#fff;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	
+}
+
+/*-----------------------------------
+
+	Fancybox
+
+------------------------------------------*/
+#fancybox-tmp{
+	position:relative;
+	z-index:9999999999;
+	
+}	
+
+#fancybox-loading{
+	
+	position:relative;
+	z-index:9999999999;
+	
+}
+
+#fancybox-overlay{
+	
+	position:relative;
+	z-index:9999999999;
+	
+}

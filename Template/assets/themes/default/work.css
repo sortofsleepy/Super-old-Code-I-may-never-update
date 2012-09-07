@@ -1,0 +1,16 @@
+@import url('../../css/main.css');
+
+
+/*----category box------*/
+#category-box{
+	height:400px;
+	width:200px;
+	-webkit-box-shadow:0px 0px 10px #555;
+	-moz-box-shadow:0px 0px 10px #555;
+
+	padding:18px;
+
+	border-top:solid;
+	border-width:10px;
+	border-color:#333;
+}

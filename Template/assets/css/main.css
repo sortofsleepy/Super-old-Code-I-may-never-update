@@ -1,0 +1,288 @@
+/*
+	this is the main css stylesheet.
+	All of your general declarations that
+	will not change from page to page should go here.
+	
+*/
+
+@import url('typography.css');
+@import url('mobile.css');
+*{
+	margin:0px;
+	padding:0px;
+}
+
+ul,li{
+	list-style:none;
+}
+.clear{
+	clear:both;
+}
+/*
+body {
+  background: url(http://griddle.it/1024-12-30) repeat-y center top;
+}
+*/
+a{
+	-webkit-transition: background-color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in;
+	-webkit-transition: color 0.5s ease-in;
+	-moz-transition:color 0.5s ease-in;
+	
+	background:none;
+	color:#333;
+	padding:2px;
+}
+
+a:hover{
+	-webkit-transition: background-color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in;
+	-webkit-transition: color 0.5s ease-in;
+	-moz-transition:color 0.5s ease-in;
+	
+	background-color:#333;
+	color:#eee;
+	padding:2px;
+}
+	
+#main{
+
+	height:960px;
+	width:1024px;
+	margin-left:auto;
+	margin-right:auto;
+	-webkit-box-shadow:0px 4px 10px #999;
+	-moz-box-shadow:0px 4px 10px #999;
+	position:relative;
+	display:none;
+}
+button{
+	border:none;
+	padding:5px;
+	background:none;
+}
+
+button:hover{
+	-webkit-transition:-webkit-box-shadow 0.5s ease-in;
+    -webkit-box-shadow:0px 0px 10px #333;
+    -webkit-transition:background-color 0.5s ease-in;
+    -moz-transition: background-color 0.5s ease-in;
+    background:#ddd;
+}
+
+button.selected{
+	-webkit-box-shadow:0px 0px 10px #555;
+	-moz-box-shadow:0px 0px 10px #555;
+}
+
+#social li{
+	float:left;
+	margin-left:5px;
+
+}
+
+#social{
+	margin-left:-5px;
+	
+	
+}
+/*-----nav------*/
+nav ul{
+	margin-left:-10px;
+	float:right;
+	position:relative;
+
+	top:30px;
+}
+
+nav{
+	float:right;
+	height:70px;
+	width:830px;
+	position:relative;
+	bottom:100px;
+	right:0px;
+	-webkit-box-shadow:0px 0px 10px #999;
+	-moz-box-shadow:0px 0px 10px #999;
+	padding:10px;
+}
+nav ul li{
+	float:left;
+	margin-left:10px;
+	font-family:"Museo";
+}
+
+.menu-link:hover;{
+	-webkit-transition: border-top 0.5s ease-in;
+	-moz-transition: border-top 0.5s ease-in;
+	-webkit-transition: color 0.5s ease-in;
+	-moz-transition:color 0.5s ease-in;
+	border-top:solid;
+	border-width:5px;
+	border-color:#333;
+	padding-top:40px;
+
+}
+
+/*-----header-----*/
+header{
+
+	width:1024px;
+	margin-bottom:-100px;
+
+}
+#topbar{
+
+}
+#site-name{
+	-webkit-box-shadow:0px 5px 10px #999;
+	-moz-box-shadow:0px 5px 10px #999;
+	width:210px;
+	height:50px;
+	padding-bottom:30px;
+	padding:10px;
+	padding-left:15px;
+	padding-top:35px;
+	
+	border-left:solid;
+	border-right:solid;
+	border-bottom:solid;
+	
+	border-width:1px;
+	border-bottom-width:10px;
+	border-bottom-color:#333;
+	border-left-color:#c9c9c9;
+		border-right-color:#c9c9c9;
+	background-color:#fff;
+	position:relative;
+	z-index:22;
+}
+
+/*-------footer-------------*/
+footer{
+    height: 300px;
+	width: 1024px;
+    margin-left:auto;
+    margin-right: auto;
+
+	position: fixed;
+	z-index: 1;
+	bottom: -300px;
+	border-top:solid;
+
+    padding-top:50px;
+	border-width: 1px;
+	border-color:#fff;
+
+    background-color:#fff;
+	-webkit-box-shadow:0px 0px 10px #999;
+	-moz-box-shadow:0px 0px 10px #999;
+    border-top-width: 5px;
+        border-top-color: #333;
+}
+footer button{
+	border:none;
+	background:none;
+}
+
+footer button:hover{
+	
+}
+.open{
+    -webkit-box-shadow:0px 0px 10px #999;
+    -moz-box-shadow: 0px 0px 10px #999;
+    background-color: #fff;
+}
+
+/*----------thumbnails-------------*/
+.thumb{
+	border:solid;
+	border-width:5px;
+	border-color:#333;
+}
+
+/*---------section titles--------*/
+.section-title{
+	background-color:#fff;
+	width:200px;
+	padding:10px;
+	-webkit-box-shadow:0px 0px 10px #999;
+    -moz-box-shadow: 0px 0px 10px #999;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	margin-bottom:10px;
+	
+	border-left:solid;
+	border-right:solid;
+	border-bottom:solid;
+	
+	border-width:1px;
+	border-bottom-width:10px;
+	border-bottom-color:#333;
+	border-left-color:#c9c9c9;
+		border-right-color:#c9c9c9;
+}
+
+.section-title2{
+	border-bottom:solid;
+	border-bottom-color:#333;
+	border-style:dotted;
+	border-bottom-width:1px;
+	
+	border-top:none;
+	border-left:none;
+	border-right:none;
+}
+
+/*------GENERAL PAGE CONTENT--------*/
+#page-content{
+	margin-top:40px;
+}
+/*------CONTACT--------*/
+#contact{
+	height:400px;
+	width:100%;
+	background-color:#333;
+	margin-top: -400px;
+	
+}
+
+
+.mail-section{
+	padding-top:10px;
+}
+
+.contact-element{
+	height:100%;
+	width:1024px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#contact input[type="text"]{
+	height:30px;
+	width:300px;
+	
+}
+
+#contact textarea{
+	height:100px;
+	width:300px;
+}
+
+#contact-copy{
+	margin-top:-50px;
+	position:relative;
+	bottom:320px;
+	width:300px;
+	left:80px;
+	height:200px;
+}
+
+#contact-copy p{
+	font-family:"Museo";
+	width:400px;
+}
+/*------ABOUT--------*/
+#about{
+	
+}

@@ -1,0 +1,43 @@
+@import url('../../css/main.css');
+
+#intro h1{
+	font-size:65px;
+	border-bottom:solid;
+	border-bottom-style:dotted;
+	border-bottom-width:1px;
+	border-bottom-color:#333;
+	width:1000px;
+	padding:5px;
+	margin-left:5px;
+}
+
+#school{
+	padding:10px;
+}
+
+#content-copy{
+	float:right;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-box-sizing: border-box;
+
+	display: -moz-box;
+	-moz-box-orient: horizontal;
+	-moz-box-flex: 2;
+	-moz-box-sizing: border-box;
+	position:relative;
+	right:20px;
+	top:10px;
+	
+}
+
+#software{
+	padding-left:30px;
+	padding-right:30px;
+}
+
+#programming{
+	padding-left:30px;
+	padding-right:30px;
+}
+

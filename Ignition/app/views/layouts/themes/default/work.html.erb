@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title>Work</title>
+    <!--css-->
+    <%= css('work') %>
+	<%= stylesheet_link_tag "nivo-work.css","shCore.css","shThemeDjango.css" %>
+	<link rel="stylesheet" type="text/css" href="/javascripts/fancybox/fancybox.css"/>
+	
+
+	</head>
+
+
+
+        <body>
+
+
+
+          <div id="main">
+          <%= render_common("header")  %>
+
+
+            <section id="page-content-wrapper">
+             
+<section id="page-content">
+			 <h1 style="border-bottom:solid;border-width:1px;border-color:#dfdfdf;width:98%;position:relative;top:80px;left:10px;font-size:50px;">Work</h1>
+	
+
+
+
+
+			 </section><!--end page content-->
+
+            </section><!--end page content-->
+
+
+          
+          </div><!--end main-->
+		<div id="single-anchor"></div>
+ <%= render_common("footer") %>
+	</body>
+         
+          <%= javascript_include_tag :defaults %>
+		  <%= javascript_include_tag "work.js","isotope.js","fancybox/fancybox.js","nivo.js","shCore.js","shBrushPhp.js" %>
+ 		<script>
+		$(window).load(function() {
+		    $('#slider').nivoSlider();
+			SyntaxHighlighter.all();
+		});
+		</script>
+</html>

@@ -1,0 +1,56 @@
+
+@font-face{
+    font-family:"Museo";
+    src:url('fonts/Museo_Slab_500.otf');
+}
+
+@font-face{
+    font-family:"Fabrica";
+    src:url('fonts/Fabrica.otf');
+}
+
+@font-face{
+	font-family:"goudy";
+	src:url('fonts/CartoGothicStd-Bold.otf');
+}
+body{
+	
+	font-size:12px;
+	font-family:sans-serif;
+}
+
+
+
+h1{
+	font-family:  sans-serif;
+	
+}
+
+#site-title{
+	letter-spacing:-3px;
+	font-weight:bolder;
+	width:400px;
+	font-size:20pt;
+	font-family:"Museo";
+	position:relative;
+	top:2px;
+
+}
+
+/*
+	Introductory message
+*/
+.intro{
+	font-size:80px;
+	width:980px;
+	letter-spacing:-7px;
+	font-family:"Museo";
+	line-height:70px;
+	font-weight:bolder;
+	
+}
+
+
+#intro{
+		
+}

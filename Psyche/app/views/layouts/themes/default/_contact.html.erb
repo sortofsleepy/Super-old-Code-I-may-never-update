@@ -1,0 +1,36 @@
+<section id="contact">
+	<form action="/email/index/" method="get" class="contact-element">
+<input type="hidden" name="referer" value="<%= @title %>" />
+		<div class="mail-section">
+		<h3>Name</h3>
+		<input type="text" name="name" id="name-box" placeholder="Enter a nice name"/>
+		</div>
+	
+		
+		<div class="mail-section">
+		<h3>Email</h3>
+		<input type="text" name="email" id="email-box" placeholder="So I know how to contact you"/>
+		</div>
+	
+		<div class="mail-section">
+		<h3>Website</h3>
+		<input type="text" name="website" id="website-box" placeholder="So I know how to contact you"/>
+		</div>
+	
+		<div class="mail-section">
+		<h3>Message</h3>
+		<textarea name="message" id="email-message" placeholder="Enter a very nice message here"></textarea>
+		</div>
+		
+		<input type="submit" id="contact-submit"/>
+	</form>
+		
+	<section id="contact-copy" class="contact-element"> 
+		<p style="color:#eee;">By all means, please feel free to contact me with questions, comments, rants, etc</p>
+		
+		
+		<br/>
+	
+	</section>
+	
+</section><!--end contact-->

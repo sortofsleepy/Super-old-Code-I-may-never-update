@@ -1,0 +1,77 @@
+@import url('../typography.css');
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+body{
+    font-family: Arial,sans-serif;
+    font-size: 15px;
+
+}
+
+
+#main{
+  
+    width: 100%;
+}
+
+
+
+#topbar{
+    height:100px;
+    width:100%;
+    background-color:#aaa;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+
+.divider{
+    height:1px;
+    background:#aaa;
+}
+ul, li{
+    list-style: none;
+}
+/*-----------header---------*/
+
+header{
+  width:100%;
+
+    border-top:solid;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+
+    padding-bottom:20px;
+    border-top-width:5px;
+    border-color: #333;
+    overflow: visible;
+}
+
+nav ul{
+    position: relative;
+    float:left;
+    right: 0px;
+    overflow: hidden;
+    height:20px;
+    left:300px;
+}
+
+nav ul li{
+  float: none;
+}
+
+header h1{
+    letter-spacing: -5px;
+}
+/*-----------page content--------------*/
+
+#page-content{
+    height:960px;
+    width:100%;
+    margin-top: 50px;
+}
+
+
+/*-----------footer--------------*/

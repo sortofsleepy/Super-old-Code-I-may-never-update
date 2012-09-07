@@ -1,0 +1,108 @@
+int mx;
+int my;
+int pmx;
+int pmy;
+float grow;
+float shrink;
+
+void setup(){
+  size(600,600);
+  smooth();
+  background(255);
+}
+ 
+void draw(){
+   selfDraw();
+mx=mouseX;
+my=mouseY;
+pmx=pmouseX;
+pmy=pmouseY;
+
+/*Originally, this was program was supposed to draw lines after selecting one of the following options.
+For some reason, its now needed to allow constant drawing of other shapes without holding down that specific key
+*/
+if((mousePressed==true)&&(keyPressed=true)&&(key=='1')){
+strokeWeight(1);
+line(mx,my,pmx,pmy);
+}
+if((mousePressed==true)&&(keyPressed=true)&&(key=='2')){
+strokeWeight(4);
+line(mx,my,pmx,pmy);
+}
+
+if((mousePressed==true)&&(keyPressed=true)&&(key=='3')){
+strokeWeight(7);
+line(mx,my,pmx,pmy);
+}
+
+
+
+//changes drawing pattern to square
+if(key=='s'){
+rect(mouseX,mouseY,20,40);
+}
+
+
+  //changes drawing pattern to a triangle
+if((keyPressed== true) && (key=='t')){
+  triangle(200,200,mouseX,mouseY,pmx,pmy);
+}
+
+
+
+//changes drawing pattern to duel circles
+  if((keyPressed==true) && (key=='c')){
+   
+  ellipse(pmouseY,pmouseX,30,30);
+  ellipse(pmouseX,pmouseY,30,30);
+  
+}
+}
+
+/*generates new background. press any unused key to stop.
+warning, very processor intensive
+*/
+
+void selfDraw(){
+  
+if(key=='7'){
+$("#intro-text").css("background-color","#333");
+  
+for(int i= 0; i<400;i+=10){
+   shrink=shrink-.10;
+ triangle(shrink,i,shrink,shrink,200,200);
+ translate(random(100),200);
+ rotate(random(50));
+ 
+ }
+
+  
+for(int i= 7; i<400;i+=10){
+shrink=shrink-.10;
+  ellipse(300,350,shrink,i);
+ translate(random(100),200);
+ rotate(random(50));
+ 
+ }
+}
+}
+
+//what hapens when the mouse is dragged
+void mouseDragged(){
+  fill(random(250),random(250),random(250));
+  stroke(random(250),random(100));
+  strokeWeight(grow=grow+.5);
+  line(mx,my,pmx,pmy);
+ }
+
+ 
+ /*letting go of the mouse returns strokeWeight to normal. 
+ I unfortunetly can't explain why sometimes gaps appear in the normal line*/
+ void mouseMoved(){
+   grow=0;
+    strokeWeight(2);
+    line(mx,my,pmx,pmy);
+    
+ }
+ 
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<meta charset=utf-8/>
+<html>
+<head>
+  <title><%= @title %> </title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+  <%= ui_css %>
+  <%= stylesheet_link_tag "system/form.css" %>
+  <%= javascript_include_tag :ui%>
+  <%= javascript_include_tag :editor%>
+  <%= csrf_meta_tag %>
+
+
+<script>
+
+  $(document).ready(function() {
+    $("textarea").ckeditor();
+
+ });
+
+  </script>
+</head>
+<body>
+
+
+  <div id="topbar">
+
+      <%= render 'common/adminnav' %>
+  </div>
+
+  <div id="main">
+
+
+
+  <div id="page-content">
+
+       <%= yield %>
+   </div>
+
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+
+</html>

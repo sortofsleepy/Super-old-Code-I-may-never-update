@@ -1,0 +1,20 @@
+<!-- this is where you can style your menus -->
+
+<nav>
+	<ul>
+
+	<li><h4><a href="/">Home</a></h4></li>
+	<li>/</li>
+{% for p in pages %}
+	
+	{% if p.title == "Contact" %}
+	<li><h4><a class="menu-link" href="#!/contact" id="{{p.title}}-button">{{ p.title }}</a></h4></li>
+		<li>/</li>
+	{% else %}
+	<li><h4><a class="menu-link" href="/{{p.title|lower}}" id="{{p.title}}-button">{{ p.title }}</a></h4></li>
+		<li>/</li>
+	{% endif %}
+
+{% endfor %}
+</ul>
+</nav>

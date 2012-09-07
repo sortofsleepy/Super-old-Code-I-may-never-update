@@ -1,0 +1,131 @@
+@import url('typography.css');
+
+
+
+*{
+    margin:0px;
+    padding:0px;
+}
+
+
+body{
+    background:#f2f2f2;
+}
+
+#main{
+ 	padding-bottom:100px;
+margin-bottom:100px;
+    width:1024px;
+    margin-left: auto;
+    margin-right: auto;
+    background:#fff;
+    -webkit-box-shadow:0px 0px 10px #999;
+    -moz-box-shadow:0px 0px 10px #999;
+
+}
+
+ul,li{
+    list-style: none;
+}
+
+a{
+	-webkit-transition:background-color 0.5s ease-in;
+	-moz-transition:background-color 0.5s ease-in;
+	-webkit-transition:color 0.5s ease-in;
+	-moz-transition:color 0.5s ease-in;
+
+	color:#333;
+	background:none;
+}
+
+a:hover{
+	-webkit-transition:background-color 0.5s ease-in;
+	-moz-transition:background-color 0.5s ease-in;
+	-webkit-transition:color 0.5s ease-in;
+	-moz-transition:color 0.5s ease-in;
+	
+
+	background-color:#333;
+	color:#fff;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+
+	
+}
+
+/*--------------
+    header
+---------------*/
+header{
+    z-index:99999999999;
+   
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+
+    -webkit-box-shadow:0px 0px 10px #c1c1c1;
+    -moz-box-shadow:0px 0px 10px #c1c1c1;
+    box-shadow:0px 0px 10px #c1c1c1;
+}
+
+#header-bottom-border{
+    width:250px;
+    border-bottom: solid;
+    border-width: 8px;
+    border-color: #333;
+}
+#site-title{
+    padding:8px;
+    padding-top:50px;
+    width:233px;
+    -webkit-box-shadow:0px 0px 8px #333;
+    -moz-box-shadow:0px 0px 8px #333;
+    -o-box-shadow:0px 0px 8px #333;
+}
+nav ul li{
+    float: left;
+    margin-left: 5px;
+}
+
+nav{
+    float:right;
+    position: relative;
+    right:40px;
+    bottom:60px;
+    font-size: 17px;
+}
+/*--------------
+  	footer
+---------------*/
+
+footer{
+	display:none;
+	height:100px;
+	width:1024px;
+  -webkit-box-shadow:0px 0px 10px #c1c1c1;
+    -moz-box-shadow:0px 0px 10px #c1c1c1;
+    box-shadow:0px 0px 10px #c1c1c1;
+background:#fff;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:20px;
+	
+	border-top:solid;
+	border-top-width:6px;
+	border-top-color:#333;
+	
+}
+
+#footer-content{
+	padding:10px;
+	
+}
+
+#footer-content h1{
+	border-bottom:solid;
+	border-bottom-color:#dfdfdf;
+	width:300px;
+	border-bottom-width:1px;
+
+	
+}

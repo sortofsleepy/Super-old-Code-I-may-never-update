@@ -1,0 +1,128 @@
+{% load common %}
+{% load projects %}
+{% load ui %}
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{ site_name }}</title>
+<meta charset=utf-8>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<!-- css -->
+{{ "about"|css }}
+
+
+<!-- js -->
+{% base_js %}
+{{ "scrollTo"|js }}
+
+
+
+{{"button"|ui}}
+</head>
+<body>
+<script type="text/javascript">
+$(document).ready(function(){
+	//giving the submit button for the contact form a stylized look
+	$("input").button();	
+});
+</script>
+<section id="contact">
+	<form action="/sendmail/" method="post" class="contact-element">
+		<div class="mail-section">
+		<h3>Name</h3>
+		<input type="text" name="name" id="name-box" placeholder="Enter a nice name"/>
+		</div>
+	
+		
+		<div class="mail-section">
+		<h3>Email</h3>
+		<input type="text" name="email" id="email-box" placeholder="So I know how to contact you"/>
+		</div>
+	
+		
+		<div class="mail-section">
+		<h3>Message</h3>
+		<textarea name="message" id="email-message" placeholder="Enter a very nice message here"></textarea>
+		</div>
+		
+		<input type="submit" id="contact-submit"/>
+	</form>
+		
+	<section id="contact-copy" class="contact-element"> 
+		<p style="color:#eee;">By all means, please feel free to contact me with questions, comments, rants, etc</p>
+	</section>
+	
+</section><!--end contact-->
+<div id="top"></div>
+<div id="main">
+
+{% include 'common/header.html' %}
+
+<section id="page-content">
+
+	<section id="content-wrapper">
+		
+		
+			<section id="intro">
+				<h1>I'm a 24 year old designer from the Bay Area in California.
+				I'm versed in a wide variety of designing techniques and fields</h1>
+			</section>
+	
+
+	
+			<div id="content-copy">
+		<section id="software">
+				<ul>
+					<li><h2 class="section-title">Software</h2></li>
+					<li><h3>Photoshop</h3></li>
+					<li><h3>Illustrator</h3></li>
+					<li><h3>Flash</h3></li>
+					<li><h3>Premiere</h3></li>
+					<li><h3>Logic Pro</h3></li>
+					<li><h3>Maya</h3></li>
+				</ul>
+		</section>
+		
+			<section id="programming">
+					<ul>
+						<li><h2 class="section-title">Programming</h2></li>
+						<li><h3>Actionscript</h3></li>
+						<li><h3>PHP</h3></li>
+						<li><h3>HTML/CSS</h3></li>
+						<li><h3>Javascript</h3></li>
+						<li><h3>Django</h3></li>
+						<li><h3>Rails</h3></li>
+						<li><h3>Processing</h3></li>
+					</ul>
+			</section>
+		</div>
+		
+			<section id="school">
+				<h2 style="letter-spacing:0px">I went to UCLA and studied in Design|Media Arts</h2>
+				<img src="/static/images/broad.jpeg" alt="broad"/>
+			</section>
+		</section><!--end content wrapper-->
+	
+</section><!--end page content-->
+
+{% include 'common/footer.html' %}
+
+<script type="text/javascript">
+	$(document).ready(function(){
+	//	$("#slider ul").anythingSlider();
+		
+	})
+</script>
+
+</div>
+
+
+
+
+
+</body>
+
+</html>

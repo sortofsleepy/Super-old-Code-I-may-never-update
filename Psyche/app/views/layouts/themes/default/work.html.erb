@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <title><%= get_title %> </title>
+    <!--css-->
+    <%= css('work') %>
+<%= stylesheet_link_tag "syntax.css"%>
+	<link rel="stylesheet" type="text/css" href="./fancybox/fancybox.css" />
+          <%= javascript_include_tag :defaults %>
+		  <%= javascript_include_tag "work.js"%>
+ <%= javascript_include_tag "easing.js"%>
+<script type="text/javascript" src="./fancybox/fancybox.js"></script>
+
+<%= javascript_include_tag "shCore.js" %>
+<%= javascript_include_tag "shBrushPhp.js" %>
+<%= javascript_include_tag "processing.js" %>
+<%= javascript_include_tag "twit.js" %>
+<script type="text/javascript">
+ $(document).ready(function(){
+
+SyntaxHighlighter.all(); 
+ $("#sublime-photos li a").fancybox();
+});
+</script>
+
+	</head>
+
+
+
+        <body>
+
+	<%= render_common("contact") %>
+<section id="single-view">
+<div id="close-button" onclick="Work.reset();"><a onclick="Work.reset();" href="#" id="close">Close</a></div>
+<script type="text/javascript">
+ $(document).ready(function(){
+ $(".photo").fancybox();
+});
+</script>
+
+
+</section>
+<section id="single-view-content">
+
+</section>
+
+          <div id="main">
+          <%= render_common("header")  %>
+
+
+            <section id="page-content-wrapper">
+              
+<section id="page-content">
+			
+			<div id="category-box">
+	
+	<h1>Categories</h1>
+	<ul>
+	
+		<li><a href="#!web" onclick="Work.web();">Web</a></li>
+		<li><a href="#!photo" onclick="Work.photo();">Photo</a></li>
+	<li><a href="#!programming" onclick="Work.programming();">Programming</a></li>
+<li><a href="#!video" onclick="Work.video();">Video</a></li>
+	</ul>
+	<br/><br/>
+<a href="#" onclick="Work.removeFilter();">Reset</a>
+</div><!--end category box-->
+
+
+
+
+			 </section><!--end page content-->
+
+            </section><!--end page content-->
+
+
+          <%= render_common("footer") %>
+          </div><!--end main-->
+	</body>
+     
+</html>
